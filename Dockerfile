@@ -1,4 +1,4 @@
-FROM  quay.io/prometheus/busybox:latest
+FROM --platform=linux/arm64 registry.kohl.casa/dockerhub/library/alpine:latest
 LABEL maintainer="Lukas Malkmus <mail@lukasmalkmus.com>"
 
 COPY rpi_exporter /bin/rpi_exporter

@@ -11,6 +11,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include Makefile.common
+DOCKER_IMAGE_NAME			?= rpi-exporter
+DOCKER_ARCHS					?= arm64
+DOCKER_REPO						?= registry.kohl.casa/library
+DOCKER_IMAGE_TAG			?= $(shell cat VERSION)
 
-DOCKER_IMAGE_NAME       ?= rpi-exporter
+include Makefile.common
